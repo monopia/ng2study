@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from './shared/models/user';
 
 @Component({
@@ -7,7 +7,7 @@ import { User } from './shared/models/user';
   styleUrls: ['./app/app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit{
   message: string = 'Hello';
   users: User[] = [
     { id: 25, name: 'Kim', username: 'euisoo'},
@@ -17,12 +17,16 @@ export class AppComponent {
 
   activeUser: User;
 
-  selectUser(user) {
+  selectUser(user: User) {
     this.activeUser = user;
   }
 
   onUserCreated(event) {
     console.log(event);
     this.users.push(event.user);
+  }
+
+  ngOnInit(): void {
+    return;
   }
 }

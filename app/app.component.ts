@@ -11,8 +11,8 @@ export class AppComponent implements OnInit{
   message: string = 'Hello';
   users: User[] = [
     { id: 25, name: 'Kim', username: 'euisoo'},
-    { id: 26, name: 'Nick', username: 'dadavi'},
-    { id: 27, name: 'Holly', username: 'eee'}
+    { id: 26, name: 'Nick', username: 'Jack'},
+    { id: 27, name: 'Holly', username: 'Spirit'}
   ]
 
   activeUser: User;

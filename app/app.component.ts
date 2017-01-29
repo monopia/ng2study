@@ -10,7 +10,7 @@ import { User } from './shared/models/user';
 export class AppComponent implements OnInit{
   message: string = 'Hello';
   users: User[] = [
-    { id: 25, name: 'Kim', username: 'euisoo'},
+    { id: 25, name: 'Kim', username: 'Euisoodam'},
     { id: 26, name: 'Nick', username: 'Jack'},
     { id: 27, name: 'Holly', username: 'Spirit'}
   ]
